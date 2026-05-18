@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        burgundy: {
+        burgandy: {
           DEFAULT: "#800020",
           light: "#a3324d",
           dark: "#5c0018",
@@ -22,8 +22,8 @@ export default {
           800: "#800020",
           900: "#6e1c38",
         },
-        softcream: {
-          DEFAULT: "#F9F5F0",
+        softCream: {
+          DEFAULT: "#FFDECB",
           dark: "#f0e8df",
           light: "#FDFBF9",
         },

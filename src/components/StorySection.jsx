@@ -27,8 +27,8 @@ export default function StorySection({ imageBase, quoteEn, quoteAr, index, chapt
       )}
 
       {/* Decorative corner elements */}
-      <div className="absolute top-8 left-8 w-16 h-16 border-t border-l border-burgandy/10 rounded-tl-xl" />
-      <div className="absolute bottom-8 right-8 w-16 h-16 border-b border-r border-burgandy/10 rounded-br-xl" />
+      <div className="absolute top-8 left-8 w-16 h-16 border-t border-l border-burgundy/10 rounded-tl-xl" />
+      <div className="absolute bottom-8 right-8 w-16 h-16 border-b border-r border-burgundy/10 rounded-br-xl" />
 
       <div className={`relative z-10 flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-12 md:gap-20 w-full max-w-7xl`}>
 
@@ -46,7 +46,7 @@ export default function StorySection({ imageBase, quoteEn, quoteAr, index, chapt
             className="relative aspect-[3/4] rounded-[40px] overflow-hidden shadow-[0_30px_80px_rgba(128,0,32,0.15)]"
           >
             {/* Decorative border */}
-            <div className="absolute inset-0 rounded-[40px] border-2 border-burgandy/10 z-20 pointer-events-none" />
+            <div className="absolute inset-0 rounded-[40px] border-2 border-burgundy/10 z-20 pointer-events-none" />
 
             {/* Main image */}
             <img
@@ -57,11 +57,11 @@ export default function StorySection({ imageBase, quoteEn, quoteAr, index, chapt
             />
 
             {/* Gradient overlay bottom */}
-            <div className="absolute inset-0 bg-gradient-to-t from-burgandy/20 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-burgundy/20 via-transparent to-transparent" />
 
             {/* Chapter number watermark */}
             <div className="absolute top-6 right-6 w-12 h-12 rounded-full bg-softCream/80 backdrop-blur-sm flex items-center justify-center z-20">
-              <span className="font-serif text-burgandy text-sm font-semibold">{String(index + 1).padStart(2, '0')}</span>
+              <span className="font-serif text-burgundy text-sm font-semibold">{String(index + 1).padStart(2, '0')}</span>
             </div>
           </motion.div>
 
@@ -87,7 +87,7 @@ export default function StorySection({ imageBase, quoteEn, quoteAr, index, chapt
             whileInView={{ opacity: 0.15, rotate: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.6, duration: 1 }}
-            className={`absolute ${isEven ? '-left-8 top-12' : '-right-8 top-12'} text-burgandy`}
+            className={`absolute ${isEven ? '-left-8 top-12' : '-right-8 top-12'} text-burgundy`}
           >
             <HeartSVG size={35} />
           </motion.div>
@@ -106,8 +106,8 @@ export default function StorySection({ imageBase, quoteEn, quoteAr, index, chapt
             transition={{ duration: 0.8 }}
             className="flex items-center gap-3 mb-2"
           >
-            <div className="w-8 h-[1px] bg-burgandy/30" />
-            <span className="text-xs tracking-[0.4em] uppercase text-burgandy/50 font-serif">
+            <div className="w-8 h-[1px] bg-burgundy/30" />
+            <span className="text-xs tracking-[0.4em] uppercase text-burgundy/50 font-serif">
               {chapterTitle}
             </span>
           </motion.div>
@@ -119,7 +119,7 @@ export default function StorySection({ imageBase, quoteEn, quoteAr, index, chapt
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 1, delay: 0.2, ease: 'easeOut' }}
           >
-            <p className="font-script text-3xl md:text-5xl lg:text-6xl text-burgandy leading-[1.3] mb-2">
+            <p className="font-script text-3xl md:text-5xl lg:text-6xl text-burgundy leading-[1.3] mb-2">
               {quoteEn}
             </p>
           </motion.div>
@@ -130,7 +130,7 @@ export default function StorySection({ imageBase, quoteEn, quoteAr, index, chapt
             whileInView={{ width: '80px' }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            className={`h-[1px] bg-burgandy/25 ${isEven ? '' : 'self-end'}`}
+            className={`h-[1px] bg-burgundy/25 ${isEven ? '' : 'self-end'}`}
           />
 
           {/* Arabic quote */}
@@ -141,7 +141,7 @@ export default function StorySection({ imageBase, quoteEn, quoteAr, index, chapt
             transition={{ duration: 1, delay: 0.4, ease: 'easeOut' }}
             className="w-full"
           >
-            <p className="font-arabic text-3xl md:text-4xl lg:text-5xl text-burgandy/80 leading-[1.6]" dir="rtl">
+            <p className="font-arabic text-3xl md:text-4xl lg:text-5xl text-burgundy/80 leading-[1.6]" dir="rtl">
               {quoteAr}
             </p>
           </motion.div>

@@ -59,7 +59,7 @@ export default function IntroScreen({ onEnter }) {
           </motion.div>
 
           <motion.p
-            className="text-burgundy/60 text-sm tracking-[0.4em] uppercase font-serif"
+            className="text-burgandy/60 text-sm tracking-[0.4em] uppercase font-serif"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
@@ -68,7 +68,7 @@ export default function IntroScreen({ onEnter }) {
           </motion.p>
 
           <motion.h1
-            className="font-script text-7xl md:text-9xl text-burgundy drop-shadow-sm"
+            className="font-script text-7xl md:text-9xl text-burgandy drop-shadow-sm"
             initial={{ opacity: 0, scale: 0.6, filter: 'blur(20px)' }}
             animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
             transition={{ delay: 1, duration: 1.5, ease: 'easeOut' }}
@@ -77,7 +77,7 @@ export default function IntroScreen({ onEnter }) {
           </motion.h1>
 
           <motion.p
-            className="font-arabic text-3xl md:text-4xl text-burgundy/80 mt-2"
+            className="font-arabic text-3xl md:text-4xl text-burgandy/80 mt-2"
             dir="rtl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -96,8 +96,8 @@ export default function IntroScreen({ onEnter }) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span className="absolute inset-0 bg-burgundy rounded-full animate-ping opacity-20" />
-            <span className="relative flex items-center gap-3 px-10 py-4 bg-burgundy text-softCream rounded-full font-serif text-lg tracking-widest shadow-2xl shadow-burgundy/30 group-hover:shadow-burgundy/50 transition-shadow duration-500">
+            <span className="absolute inset-0 bg-burgandy rounded-full animate-ping opacity-20" />
+            <span className="relative flex items-center gap-3 px-10 py-4 bg-burgandy text-softCream rounded-full font-serif text-lg tracking-widest shadow-2xl shadow-burgandy/30 group-hover:shadow-burgandy/50 transition-shadow duration-500">
               <HeartSVG size={28} className="fill-softCream" />
               <span>Open My Heart</span>
               <HeartSVG size={28} className="fill-softCream" />
@@ -112,7 +112,7 @@ export default function IntroScreen({ onEnter }) {
           animate={{ opacity: 1 }}
           transition={{ delay: 3.5, duration: 1 }}
         >
-          <p className="text-burgundy/30 text-xs tracking-widest font-serif">Made with love</p>
+          <p className="text-burgandy/30 text-xs tracking-widest font-serif">Made with love</p>
         </motion.div>
       </motion.div>
     </AnimatePresence>

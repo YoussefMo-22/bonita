@@ -65,12 +65,15 @@ body {
     transform: translateY(-10vh) rotate(0deg) translateX(0px);
     opacity: 0;
   }
+
   10% {
     opacity: 1;
   }
+
   90% {
     opacity: 1;
   }
+
   100% {
     transform: translateY(110vh) rotate(720deg) translateX(100px);
     opacity: 0;
@@ -82,12 +85,15 @@ body {
     transform: translateY(-10vh) rotate(0deg) translateX(0px);
     opacity: 0;
   }
+
   10% {
     opacity: 0.8;
   }
+
   90% {
     opacity: 0.8;
   }
+
   100% {
     transform: translateY(110vh) rotate(-540deg) translateX(-80px);
     opacity: 0;
@@ -95,38 +101,97 @@ body {
 }
 
 @keyframes gentleSway {
-  0%, 100% { transform: translateX(0) rotate(0deg); }
-  25% { transform: translateX(15px) rotate(3deg); }
-  50% { transform: translateX(-10px) rotate(-2deg); }
-  75% { transform: translateX(8px) rotate(1deg); }
+
+  0%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  25% {
+    transform: translateX(15px) rotate(3deg);
+  }
+
+  50% {
+    transform: translateX(-10px) rotate(-2deg);
+  }
+
+  75% {
+    transform: translateX(8px) rotate(1deg);
+  }
 }
 
 @keyframes heartbeat {
-  0%, 100% { transform: scale(1); }
-  14% { transform: scale(1.15); }
-  28% { transform: scale(1); }
-  42% { transform: scale(1.15); }
-  70% { transform: scale(1); }
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.15);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.15);
+  }
+
+  70% {
+    transform: scale(1);
+  }
 }
 
 @keyframes shimmer {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes breathe {
-  0%, 100% { transform: scale(1); opacity: 0.6; }
-  50% { transform: scale(1.05); opacity: 1; }
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
 }
 
 @keyframes sparkle {
-  0%, 100% { opacity: 0; transform: scale(0); }
-  50% { opacity: 1; transform: scale(1); }
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* ===== Utility Classes ===== */
@@ -142,15 +207,15 @@ body {
   font-family: 'ArslanWessam', 'Amiri', serif;
 }
 
-.text-burgundy {
+.text-burgandy {
   color: #800020;
 }
 
-.bg-softcream {
-  background-color: #F9F5F0;
+.bg-softCream {
+  background-color: #FFDECB;
 }
 
-.bg-burgundy {
+.bg-burgandy {
   background-color: #800020;
 }
 
@@ -171,7 +236,7 @@ body {
   height: 100%;
   border-radius: 50% 0 50% 50%;
   background: linear-gradient(135deg, #d4556b 0%, #800020 50%, #5c0018 100%);
-  box-shadow: inset 2px -2px 4px rgba(0,0,0,0.15);
+  box-shadow: inset 2px -2px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ===== Image Frame Styles ===== */
@@ -179,7 +244,7 @@ body {
   position: relative;
   border-radius: 50% 50% 5% 5%;
   overflow: hidden;
-  box-shadow: 
+  box-shadow:
     0 25px 60px rgba(128, 0, 32, 0.2),
     0 0 0 3px rgba(128, 0, 32, 0.1),
     0 0 0 6px rgba(128, 0, 32, 0.05);
@@ -222,14 +287,12 @@ body {
 
 /* ===== Shimmer Text ===== */
 .shimmer-text {
-  background: linear-gradient(
-    90deg,
-    #800020 0%,
-    #c4506a 25%,
-    #800020 50%,
-    #c4506a 75%,
-    #800020 100%
-  );
+  background: linear-gradient(90deg,
+      #800020 0%,
+      #c4506a 25%,
+      #800020 50%,
+      #c4506a 75%,
+      #800020 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
