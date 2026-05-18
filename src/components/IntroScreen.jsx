@@ -100,7 +100,7 @@ export default function IntroScreen({ onEnter }) {
             <span className="relative flex items-center gap-3 px-10 py-4 bg-burgundy text-softCream rounded-full font-serif text-lg tracking-widest shadow-2xl shadow-burgundy/30 group-hover:shadow-burgundy/50 transition-shadow duration-500">
               <HeartSVG size={28} className="fill-softCream" />
               <span>Open My Heart</span>
-              <HeartSVG size={18} className="fill-softCream" />
+              <HeartSVG size={28} className="fill-softCream" />
             </span>
           </motion.button>
         </motion.div>
